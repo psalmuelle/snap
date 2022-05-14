@@ -1,0 +1,111 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5%;
+   
+}
+.first--nav{
+display: flex;
+justify-content: space-evenly;
+gap: 4rem;
+align-items: center;
+}
+ul{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+list-style-type: none;
+}
+
+ul li{
+    font-size: 0.85rem;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 0.4rem;
+position: relative;
+}
+
+ul li img{
+    display: inline-block;
+}
+.second--nav{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 2rem;
+}
+.second--nav p{
+font-size: 0.8rem;
+
+}
+.second--nav button{
+border: 2px solid var(--medium-gray);
+border-radius: 1rem;
+padding: 0.8rem 1.4rem;
+}
+
+.nav--icon{
+display: none;
+}
+
+.tag{
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+   background: white;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+   border-radius: 0.5rem;
+   position: absolute;
+   top: 200%;
+ left: 0;
+ 
+}
+
+.one{
+    left: unset;
+    right: 0;
+}
+.dropdown img{
+    display: block;
+ 
+}
+.dropdown{
+   display:flex;
+   align-items: center;
+justify-content: flex-start;
+   gap: 0.7rem;
+   padding: 0.2rem;
+   margin: 0.3rem;
+   background: white;
+  min-width: 5rem;
+}
+
+
+
+@media screen and (max-width:760px) {
+    nav{
+       margin: 1.8rem 1rem;
+    }
+    ul{
+        display: none;
+    }
+    .second--nav{
+        display: none;
+    }
+    .nav--icon{
+        display: block;
+    }
+    .mobile-menu{
+ position: absolute;
+ width:100%;
+ height: 100vh;
+ background: rgba(0, 0, 0, 0.5);
+ right: 0;
+ 
+    }
+}
