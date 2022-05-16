@@ -124,8 +124,8 @@ class Header extends React.Component {
           />)}
         </div>
         {this.state.isOpenThree && (
-          <div className='mobile-menu'>
-            <div className="nav-section">
+          <div className='mobile-menu'  >
+            <div className="nav-section"  >
               <div  className="close-button" onClick={this.togglingThird}>
               <img src={CloseMenu} alt="close menu"/>
                 </div>
