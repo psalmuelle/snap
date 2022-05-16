@@ -182,14 +182,12 @@ class Header extends React.Component {
             </li>
             <li>Careers</li>
             <li>About</li>
-            
-            <div className='second--nav second--nav-mobile'>
+
+              </ul>
+              <div className='second--nav second--nav-mobile'>
           <p>Login</p>
           <button>Register</button>
         </div>
-
-              </ul>
-      
             </div>
           </div>
         )}
