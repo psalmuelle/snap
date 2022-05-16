@@ -107,7 +107,7 @@ justify-content: flex-start;
  height: 100vh;
  top: 0;
  left: 0;
- background: rgba(0, 0, 0, 0.5);
+ background: rgba(0, 0, 0, 0.7);
  left: 0;
     }
 .nav-section{
@@ -156,8 +156,9 @@ align-items: flex-start;
     position: relative;
    border-radius: 0;
    margin-top: 0.5rem;
-   
+  
 }
+
 .second--nav-mobile{
     display: flex;
     flex-direction: column;
@@ -189,5 +190,8 @@ margin: 0 auto;
 }
 .second--nav-mobile p:active{
     color: var(--snap-black);
+}
+.opt{
+    background: white;
 }
 }

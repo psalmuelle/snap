@@ -63,29 +63,29 @@ class Header extends React.Component {
               Features{" "}
               <img
                 src={this.state.isOpenOne ? ArrowUp : ArrowDown}
-                alt='arrow-down'
+                alt='arrow'
               />
               </div>
               {this.state.isOpenOne && (
                 <div className='tag one'>
                   <div className='dropdown'>
                     {" "}
-                    <img src={IconTodo} /> <li>Todo List</li>
+                    <img alt="to do icon" src={IconTodo} /> <li>Todo List</li>
                   </div>
 
                   <div className='dropdown'>
                     {" "}
-                    <img src={IconCalendar} /> <li>Calendar</li>
+                    <img alt="calender icon" src={IconCalendar} /> <li>Calendar</li>
                   </div>
 
                   <div className='dropdown'>
                     {" "}
-                    <img src={IconReminder} /> <li>Reminders</li>
+                    <img alt="reminder icon" src={IconReminder} /> <li>Reminders</li>
                   </div>
 
                   <div className='dropdown'>
                     {" "}
-                    <img src={IconPlanning} /> <li>Planning</li>
+                    <img alt="icon planning" src={IconPlanning} /> <li>Planning</li>
                   </div>
                 </div>
               )}
@@ -96,7 +96,7 @@ class Header extends React.Component {
               Company{" "}
               <img
                 src={this.state.isOpenTwo ? ArrowUp : ArrowDown}
-                alt='arrow-down'
+                alt='arrow'
               /></div>
               {this.state.isOpenTwo && (
                 <div className='tag'>
@@ -120,45 +120,45 @@ class Header extends React.Component {
         <div className='nav--icon' onClick={this.togglingThird}>
          {!this.state.isOpenThree && (<img
             src={ NavIcon}
-            alt='nav-icon'
+            alt='navigation icon'
           />)}
         </div>
         {this.state.isOpenThree && (
           <div className='mobile-menu'>
             <div className="nav-section">
               <div  className="close-button" onClick={this.togglingThird}>
-              <img src={CloseMenu} alt="close-menu"/>
+              <img src={CloseMenu} alt="close menu"/>
                 </div>
               
               <ul className="options">
               <li >
-                <div onClick={this.togglingFirst}>
+                <div onClick={this.togglingFirst} className="opt">
          
               Features{" "}
               <img
                 src={this.state.isOpenOne ? ArrowUp : ArrowDown}
-                alt='arrow-down'
+                alt='arrow'
               /></div>
               {this.state.isOpenOne && (
                 <div className='tag tag-mobile'>
                   <div className='dropdown dropdown-mobile'>
                     {" "}
-                    <img src={IconTodo} /> <li>Todo List</li>
+                    <img alt="to do icon" src={IconTodo} /> <li>Todo List</li>
                   </div>
 
                   <div className='dropdown'>
                     {" "}
-                    <img src={IconCalendar} /> <li>Calendar</li>
+                    <img alt="icon calender" src={IconCalendar} /> <li>Calendar</li>
                   </div>
 
                   <div className='dropdown'>
                     {" "}
-                    <img src={IconReminder} /> <li>Reminders</li>
+                    <img alt="icon reminder" src={IconReminder} /> <li>Reminders</li>
                   </div>
 
                   <div className='dropdown'>
                     {" "}
-                    <img src={IconPlanning} /> <li>Planning</li>
+                    <img alt="icon planning" src={IconPlanning} /> <li>Planning</li>
                   </div>
                 </div>
               )}
@@ -166,11 +166,11 @@ class Header extends React.Component {
 
 
             <li >
-              <div onClick={this.togglingSecond}>
+              <div onClick={this.togglingSecond} className= "opt">
               Company{" "}
               <img
                 src={this.state.isOpenTwo ? ArrowUp : ArrowDown}
-                alt='arrow-down'
+                alt='arrow'
               /></div> 
               {this.state.isOpenTwo && (
                 <div className='tag  tag-mobile'>
