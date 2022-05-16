@@ -76,6 +76,7 @@ display: none;
 }
 .dropdown{
    display:flex;
+ 
    align-items: center;
 justify-content: flex-start;
    gap: 0.7rem;
@@ -101,11 +102,92 @@ justify-content: flex-start;
         display: block;
     }
     .mobile-menu{
- position: absolute;
+ position: fixed;
  width:100%;
  height: 100vh;
+ top: 0;
+ left: 0;
  background: rgba(0, 0, 0, 0.5);
- right: 0;
- 
+ left: 0;
     }
+.nav-section{
+ position: relative; 
+ width: 65%;
+ height: 100%;
+ left: 35%;
+ background: white;
+
+}
+.close-button{
+  position: absolute;
+   width: fit-content;
+   right: 1rem;
+   top: 1.8rem;
+  z-index: 11;
+   
+}
+.close-button img{
+    display: block;
+    background: white;
+
+}
+.options{
+   display: flex;
+   background: white;
+  padding-top: 8rem;
+  padding-left: 3rem;
+ flex-direction: column;
+ gap: 2rem;
+align-items: flex-start;
+}
+.options li{
+   background: white;
+    font-size: 1rem;
+    display: block;
+    margin: 0.2rem;
+   width: 8rem;
+   
+}
+.tag-mobile{
+
+   font-size: 1rem;
+    box-shadow: unset;
+    border-radius: 0.5rem;
+    position: relative;
+   border-radius: 0;
+   margin-top: 0.5rem;
+   
+}
+.second--nav-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+    width: 100%;
+    position: unset;
+    height: 7rem;
+    padding: 1rem;
+    padding-left: 0;
+    background: white;
+}
+.second--nav-mobile p{
+padding: 0.7rem;
+font-size: 1rem;
+background: white;
+text-align: center;
+}
+.second--nav-mobile button{
+width: 10.5rem;
+background: white;
+margin: 0 auto;
+}
+.second--nav-mobile button:active{
+    background: #000;
+    color: var(--snap-white);
+}
+.second--nav-mobile p:active{
+    color: var(--snap-black);
+}
 }

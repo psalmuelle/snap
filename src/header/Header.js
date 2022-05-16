@@ -58,12 +58,14 @@ class Header extends React.Component {
           </div>
 
           <ul>
-            <li onClick={this.togglingFirst}>
+            <li >
+              <div onClick={this.togglingFirst} className= "mouse-effect">
               Features{" "}
               <img
                 src={this.state.isOpenOne ? ArrowUp : ArrowDown}
                 alt='arrow-down'
               />
+              </div>
               {this.state.isOpenOne && (
                 <div className='tag one'>
                   <div className='dropdown'>
@@ -89,12 +91,13 @@ class Header extends React.Component {
               )}
             </li>
 
-            <li onClick={this.togglingSecond}>
+            <li >
+              <div onClick={this.togglingSecond} className= "mouse-effect">
               Company{" "}
               <img
                 src={this.state.isOpenTwo ? ArrowUp : ArrowDown}
                 alt='arrow-down'
-              />
+              /></div>
               {this.state.isOpenTwo && (
                 <div className='tag'>
                   <li className='dropdown'>History</li>
@@ -103,28 +106,90 @@ class Header extends React.Component {
                 </div>
               )}
             </li>
-            <li>Careers</li>
-            <li>About</li>
+            <li className="mouse-effect">Careers</li>
+            <li className="mouse-effect">About</li>
           </ul>
         </div>
 
         <div className='second--nav'>
+          <p className="mouse-effect">Login</p>
+          <button className="mouse-btn">Register</button>
+        </div>
+          
+          
+        <div className='nav--icon' onClick={this.togglingThird}>
+         {!this.state.isOpenThree && (<img
+            src={ NavIcon}
+            alt='nav-icon'
+          />)}
+        </div>
+        {this.state.isOpenThree && (
+          <div className='mobile-menu'>
+            <div className="nav-section">
+              <div  className="close-button" onClick={this.togglingThird}>
+              <img src={CloseMenu} alt="close-menu"/>
+                </div>
+              
+              <ul className="options">
+              <li >
+                <div onClick={this.togglingFirst}>
+         
+              Features{" "}
+              <img
+                src={this.state.isOpenOne ? ArrowUp : ArrowDown}
+                alt='arrow-down'
+              /></div>
+              {this.state.isOpenOne && (
+                <div className='tag tag-mobile'>
+                  <div className='dropdown dropdown-mobile'>
+                    {" "}
+                    <img src={IconTodo} /> <li>Todo List</li>
+                  </div>
+
+                  <div className='dropdown'>
+                    {" "}
+                    <img src={IconCalendar} /> <li>Calendar</li>
+                  </div>
+
+                  <div className='dropdown'>
+                    {" "}
+                    <img src={IconReminder} /> <li>Reminders</li>
+                  </div>
+
+                  <div className='dropdown'>
+                    {" "}
+                    <img src={IconPlanning} /> <li>Planning</li>
+                  </div>
+                </div>
+              )}
+            </li>
+
+
+            <li >
+              <div onClick={this.togglingSecond}>
+              Company{" "}
+              <img
+                src={this.state.isOpenTwo ? ArrowUp : ArrowDown}
+                alt='arrow-down'
+              /></div> 
+              {this.state.isOpenTwo && (
+                <div className='tag  tag-mobile'>
+                  <li className='dropdown dropdown-mobile'>History</li>
+                  <li className='dropdown dropdown-mobile'>Our Team</li>
+                  <li className='dropdown  dropdown-mobile'>Blog</li>
+                </div>
+              )}
+            </li>
+            <li>Careers</li>
+            <li>About</li>
+            
+            <div className='second--nav second--nav-mobile'>
           <p>Login</p>
           <button>Register</button>
         </div>
 
-        <div className='nav--icon' onClick={this.togglingThird}>
-          <img
-            src={this.state.isOpenThree ? CloseMenu: NavIcon}
-            alt='nav-icon'
-          />
-        </div>
-        {this.state.isOpenThree && (
-          <div className='mobile-menu'>
-            <div>
-              <div>
-                
-              </div>
+              </ul>
+      
             </div>
           </div>
         )}

@@ -15,3 +15,29 @@
     background: var(--snap-white);
     color: var(--medium-gray);
 }
+.mouse-btn{
+transition: background 250ms ease-in;
+}
+.mouse-effect{
+transition: all 250ms ease-in;
+}
+.mouse-effect:hover{
+color: black;
+cursor: pointer;
+text-shadow: 2px 2px 2pxblack;
+}
+.mouse-btn:hover{
+border: 2px solid black;
+background: white;
+cursor:pointer;
+color: black;
+
+}
+@keyframes visibleAnime {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
